@@ -1388,6 +1388,9 @@ if (!sq.loaded) {
       evt.once(el, dom.transitionEndEvents, function(){
         loading.wrapperEl.remove();
       });
+      if (loading.wrapperEl) {
+        loading.wrapperEl.remove();
+      }
     },
   };
 
